@@ -5,7 +5,7 @@ print 'waiting'
 device = MonkeyRunner.waitForConnection()
 print 'connected'
 
-for i in range(1, 1000):
+for i in range(1, 3000):
     print i
     device.type(str(i) + 'abc\n')
-    MonkeyRunner.sleep(0.3)
+    MonkeyRunner.sleep(0.2)
